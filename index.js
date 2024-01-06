@@ -2,7 +2,7 @@ const pianoKeys=document.querySelectorAll(".piano-keys .key"),
 volumeSlider=document.querySelector(".volume-slider input"),
 keysCheckbox=document.querySelector(".keys-checkbox input");
 let allkeys = [],
- audio=new Audio("tunes/a.wav"); //by default audio src is "a" tune
+ audio=new Audio("a.wav"); //by default audio src is "a" tune
  
 const playTune=(key)=>{
     audio.src=`tunes/${key}.wav`; // paassing audio src based on key pressed 
